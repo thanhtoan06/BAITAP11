@@ -18,7 +18,7 @@ public class OrderDaoImpl_24162129 implements IOrderDao_24162129 {
                 + "FROM CartItem ci JOIN Product p ON ci.productId = p.productId "
                 + "WHERE ci.cartId = ? FOR UPDATE";
         String insertOrderSql = "INSERT INTO Orders (orderId, userId, receiverName, receiverPhone, shippingAddress, "
-                + "totalAmount, paymentMethod, status, orderDate) VALUES (?, ?, ?, ?, ?, ?, 'COD', 'PENDING', CURRENT_TIMESTAMP)";
+            + "totalAmount, paymentMethod, status, orderDate) VALUES (?, ?, ?, ?, ?, ?, 'COD', 'NEW', CURRENT_TIMESTAMP)";
         String insertItemSql = "INSERT INTO OrderItem (orderItemId, orderId, productId, quantity, unitPrice) "
                 + "VALUES (?, ?, ?, ?, ?)";
         String decreaseAmountSql = "UPDATE Product SET amount = amount - ? WHERE productId = ? AND amount >= ?";

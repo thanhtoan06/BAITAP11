@@ -30,6 +30,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="${pageContext.request.contextPath}/cart">Giỏ hàng</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="${pageContext.request.contextPath}/orders">Đơn hàng</a>
+                            </li>
                         </c:if>
                         <li class="nav-item">
                             <a class="nav-link" href="${pageContext.request.contextPath}/logout">Đăng Xuất</a>

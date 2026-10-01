@@ -26,6 +26,16 @@
     <url-pattern>/checkout</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>OrderHistoryController_24162129</servlet-name>
+    <servlet-class>com.laptrinhweb.controller.OrderHistoryController_24162129</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>OrderHistoryController_24162129</servlet-name>
+    <url-pattern>/orders</url-pattern>
+  </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
